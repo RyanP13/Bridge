@@ -4,12 +4,12 @@
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <name>HelloWorld</name>
+    <name>Bridge</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Bridge dating application
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="ryan.pays@googlemail.com" href="http://phonegap.com">
+        Bridge Team
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
@@ -25,8 +25,12 @@
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-minSdkVersion" value="8" />
     <preference name="android-installLocation" value="auto" />
+    <gap:plugin name="com.phonegap.plugins.facebookconnect">
+        <param name="APP_ID" value="1405790796350347" />
+        <param name="APP_NAME" value="Bridge" />
+    </gap:plugin>
     <icon src="icon.png" />
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />

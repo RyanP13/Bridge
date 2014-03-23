@@ -27,6 +27,9 @@
         Bridge Team
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="org.apache.cordova.facebook.Connect">
+        <param name="ios-package" value="FacebookConnectPlugin" />
+    </feature>
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
@@ -40,7 +43,7 @@
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-minSdkVersion" value="8" />
     <preference name="android-installLocation" value="auto" />
     <gap:plugin name="com.phonegap.plugins.facebookconnect">
         <param name="APP_ID" value="1405790796350347" />
@@ -70,5 +73,5 @@
     <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
-    <access origin="http://127.0.0.1*" />
+    <access origin="*" />
 </widget>
